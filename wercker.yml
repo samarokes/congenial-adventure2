@@ -17,6 +17,5 @@ build:
 test:
   steps:
     - script:
-    - script:
         name: Wait for MySQL connection
         code: sleep 20s
