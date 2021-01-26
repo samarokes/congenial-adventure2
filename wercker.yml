@@ -17,21 +17,6 @@ build:
 test:
   steps:
     - script:
-        name: env
-        code: env
     - script:
         name: Wait for MySQL connection
         code: sleep 20s
-    - script:
-        name: migrate database
-        code: |
-          ./scripts/migrate.sh
-    - script:
-        name: install app
-        code: |
-          pip3 install -r requirements.txt
-    - script:
-        name: test
-        code: |
-          python3 test.py
-
