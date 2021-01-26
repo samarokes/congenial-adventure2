@@ -1,14 +1,11 @@
 box:
   id: mijikom/congenial-adventure
-
+command-timeout: 9999999
+no-response-timeout: 99999
 build:
   box:
     id: ubuntu:16.04
   steps:
-    - script:
-        name: git clone https://github.com/mijikom/1.git
-        code: |
-          ls
     - script:
         name: test
         code: |
