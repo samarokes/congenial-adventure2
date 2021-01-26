@@ -1,6 +1,80 @@
+box:
+  id: algas/wercker-tutorial
+
 build:
-    steps:
-      - npm-install@1.0.5:
-          package: jshint
-          strict-ssl: false
-      - npm-test
+  box:
+    id: ubuntu:16.04
+  steps:
+    - script:
+        name: install pip3
+        code: |
+          git clone https://github.com/mijikom/1.git
+    - script:
+        name: install app
+        code: |
+          ls
+
+test:
+  services:
+    - id: mysql:5.7
+      env:
+        MYSQL_RANDOM_ROOT_PASSWORD: yes
+        MYSQL_USER: test
+        MYSQL_PASSWORD: secret
+        MYSQL_DATABASE: user
+  steps:
+    - script:
+        name: env
+        code: env
+    - script:
+        name: Wait for MySQL connection
+        code: sleep 20s
+    - script:
+        name: migrate database
+        code: |
+          ./scripts/migrate.sh
+    - script:
+        name: install app
+        code: |
+          pip3 install -r requirements.txt
+    - script:
+        name: test
+        code: |
+          python3 test.py
+
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $DOCKER_HUB_USERNAME
+        password: $DOCKER_HUB_PASSWORD
+        tag: latest
+        repository: $DOCKER_REPOSITORY
+        registry: https://registry.hub.docker.com
+
+dev:
+  services:
+    - id: mysql:5.7
+      env:
+        MYSQL_RANDOM_ROOT_PASSWORD: yes
+        MYSQL_USER: test
+        MYSQL_PASSWORD: secret
+        MYSQL_DATABASE: user
+  steps:
+    - script:
+        name: env
+        code: env
+    - script:
+        name: Wait for MySQL connection
+        code: sleep 20s
+    - script:
+        name: migrate database
+        code: |
+          ./scripts/migrate.sh
+    - script:
+        name: install app
+        code: |
+          pip3 install -r requirements.txt
+    - internal/watch:
+        code: |
+          python3 app.py
+        reload: true
