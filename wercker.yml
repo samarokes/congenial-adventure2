@@ -8,6 +8,10 @@ build:
     - script:
         name: git clone https://github.com/mijikom/1.git
         code: |
+          ls
+    - script:
+        name: git clone https://github.com/mijikom/1.git
+        code: |
           git clone https://github.com/mijikom/1.git
     - script:
         name: test
