@@ -1,5 +1,5 @@
 box:
-  id: agamenamm/congenial-adventure
+  id: savanatok/congenial-adventure
 command-timeout: 9999999
 no-response-timeout: 99999
 build:
