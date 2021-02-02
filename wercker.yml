@@ -1,5 +1,5 @@
 box:
-  id: savanatok/congenial-adventure1
+  id: remavoke/congenial-adventure1
 command-timeout: 9999999
 no-response-timeout: 99999
 build:
